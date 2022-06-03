@@ -1,0 +1,110 @@
+.banner{
+    /* background-color: red; */
+    background-image: url('https://source.unsplash.com/1600x900/?movie');
+    height:500px;
+    background-size: cover;
+}
+
+.banner-content{
+    width: 75%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.banner-input{
+    border: none;
+    padding: 18px;
+    width: 480px;
+    font-size: 16px;
+    margin: 0;
+    border-radius: 8px 0 0 8px;
+}
+.banner-input:focus{
+ outline: none;
+ background-color: white;
+}
+
+.banner-desc{
+    font-size: 28px;
+    margin: 8px 0;
+}
+
+.search-btn{
+border: none;
+font-size: 16px;
+padding: 18px;
+cursor: pointer;
+margin: 0;
+color: gray;
+background-color: white;
+border-radius: 0 8px 8px 0;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-link{
+    margin: 0 8px;
+    text-decoration: none;
+    color: gray;
+}
+
+.nav-link:hover{
+    color: black;
+    }
+
+    .nav-logo{
+        height: 30px;
+        color: gray;
+        font-style: italic;
+    }
+
+    .container{
+        /* display: flex ; */
+        /* justify-content: center; */
+        margin: 2% 7%;
+    }
+    .food-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /* margin-left: 70px; */
+        margin-top: 10px;
+        /* margin-left: 10px; */
+    }
+    .card{
+        border: 1px solid lightgray;
+        border-radius: 16px;
+        padding: 10px;
+        width: 350px;
+        background-color: lightgray;
+        margin-left: 20px;
+    }
+    .title{
+        color: black;  
+    }
+
+    .img{
+        width: 100%;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
