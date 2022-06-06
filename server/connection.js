@@ -1,11 +1,11 @@
 const {Client} = require('pg')
 
 const client = new Client({
-    host: "ec2-34-225-159-178.compute-1.amazonaws.com",
+    host: "hattie.db.elephantsql.com",
     user: "jnkytizawwkvbc",
     port: 5432,
-    password: "7771a4b2c92f4146fadd08ba6cdbc1bd6eb608a8afc2b9a762144358a6766139",
-    database: "dfg15ml3tesi9"
+    password: "rdcAxLPwRJGNLjFY_z0ABugnQryKD-15",
+    database: "mzocvtoh",
     // host: "localhost",
     // user: "solaogun",
     // port: 5433,
