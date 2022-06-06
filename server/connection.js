@@ -1,5 +1,6 @@
 const {Client} = require('pg')
 const fs = require('fs')
+const path = require('path')
 
 const client = new Client({
     // host: "hattie.db.elephantsql.com",
@@ -11,7 +12,7 @@ const client = new Client({
     ssl: {
         rejectUnauthorized: false,
         // key: fs.readFileSync('/path/to/client-key/postgresql.key').toString(),
-        cert: fs.readFileSync('/path/to/client-certificates/postgresql.crt').toString(),
+        // cert: fs.readFileSync('/path/to/client-certificates/postgresql.crt').toString(),
       },
     // host: "localhost",
     // user: "solaogun",
