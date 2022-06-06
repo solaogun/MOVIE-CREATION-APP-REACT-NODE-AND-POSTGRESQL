@@ -7,6 +7,7 @@ const dotenv = require('dotenv')
 const userRoute = require("./routes/users");
 const movieRoute = require("./routes/movies");
 const commentRoute = require("./routes/comment")
+const path = require('path')
 
 
 app.use(bodyParser.json());
@@ -16,6 +17,13 @@ dotenv.config();
 
 app.listen(3300, () => {
   console.log("First server using postgres is up");
+});
+
+app.use(express.static(path.join(__dirname, 'build')));
+
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 app.get("/users", (req, res) => {

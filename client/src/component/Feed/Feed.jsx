@@ -34,17 +34,18 @@ const Feed = () => {
    console.log(movies)
  }
  console.log(searchValue)
-const filteredMovies = movies.filter((movie)=> movie.name.toLowerCase().includes(searchValue.toLowerCase()))
+
+const filteredMovies = movies?.filter((movie)=> movie.name.toLowerCase().includes(searchValue.toLowerCase()))
 
 
-const url = "http://localhost:3300/api/movie/movies"
+const url = "/api/movie/movies"
 
 useEffect(()=>{
   Axios.get(url).then(response => {
     setMovies(response.data)
-    })
+    }).catch((err)=>{console.log(err)})
     console.log(movies)
-},[url])
+},[])
 
 // Axios.get(url).then(response => {
 // setMovies(response.data)
@@ -80,7 +81,10 @@ useEffect(()=>{
                   <div className='container'>
                     {/* <h3>Our List of Movies</h3> */}
                     <div className='main'>
-                        {filteredMovies.map((movie, index)=>{
+                        {
+                        filteredMovies.map((movie, index)=>
+                        // movies.map((movie, index)=>
+                        {
                             // const {id, name, photo, descriptiom, rating, releaseDate, country} = movie
                             return(
                               <div className='food-container'>
