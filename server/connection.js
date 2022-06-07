@@ -11,8 +11,8 @@ const client = new Client({
     connectionString: "postgres://uqlzmpqlwkebes:bbdb5b0f86207013e4936785ba86e29aa2c8697d0580e25d00570381801c8891@ec2-3-226-163-72.compute-1.amazonaws.com:5432/dhc9m4breqe0t?ssl=true",
     ssl: {
         rejectUnauthorized: false,
-        key: fs.readFileSync('/path/to/client-key/postgresql.key').toString(),
-        cert: fs.readFileSync('/path/to/client-certificates/postgresql.crt').toString(),
+        key: fs.readFileSync("../mycert.key").toString(),
+        cert: fs.readFileSync("../mycert.crt").toString(),
       },
     // host: "localhost",
     // user: "solaogun",
