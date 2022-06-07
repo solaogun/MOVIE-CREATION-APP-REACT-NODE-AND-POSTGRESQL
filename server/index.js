@@ -15,7 +15,9 @@ app.use(cors());
 
 dotenv.config();
 
-app.listen(3300, () => {
+// .listen(process.env.PORT || 5000)
+
+app.listen(process.env.PORT || 5000, () => {
   console.log("First server using postgres is up");
 });
 
