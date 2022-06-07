@@ -46,7 +46,7 @@ const CreateMovie = () => {
     console.log(name,'We are here Saidat')
   e.preventDefault()
   console.log(name,'We are here Saidat')
-     Axios.post("http://localhost:3300/api/movie/create", {name, description,releasedate,rating, photo, genre, ticketprice, country} ,{
+     Axios.post("/api/movie/create", {name, description,releasedate,rating, photo, genre, ticketprice, country} ,{
        mode: "same-origin", mode: "cors"
       },).then(response => {
      setMovies([...movies, response.data])

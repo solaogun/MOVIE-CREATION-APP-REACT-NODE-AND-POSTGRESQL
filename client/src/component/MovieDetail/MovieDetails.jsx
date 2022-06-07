@@ -45,7 +45,7 @@ const MovieDetails = () => {
             setErrorm('User unauthorized')
             return
         }
-        axios.post('http://localhost:3300/api/comments', {
+        axios.post('/api/comments', {
             email: userEmail, 
             message: userMessage
         },{
