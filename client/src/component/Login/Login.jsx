@@ -30,7 +30,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    axios.post("http://localhost:5000/api/user/login", {username,email,password}).then(response =>{
+    axios.post("/api/user/login", {username,email,password}).then(response =>{
      setUser(response.data)
      console.log(response.data[0])
      switch (response.status) {
