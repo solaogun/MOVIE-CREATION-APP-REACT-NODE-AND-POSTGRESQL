@@ -46,12 +46,12 @@ const CreateMovie = () => {
     console.log(name,'We are here Saidat')
   e.preventDefault()
   console.log(name,'We are here Saidat')
-     Axios.post("/api/movie/create", {name, description,releasedate,rating, photo, genre, ticketprice, country} ,{
+     Axios.post("http://localhost:5000/api/movie/create", {name, description,releasedate,rating, photo, genre, ticketprice, country} ,{
        mode: "same-origin", mode: "cors"
       },).then(response => {
      setMovies([...movies, response.data])
     console.log(movie)
-    // navigate("/Feed")
+    navigate("/")
   }).catch( (err) =>{
     console.log(err, "It is well")
   })

@@ -38,7 +38,7 @@ const Feed = () => {
 const filteredMovies = movies?.filter((movie)=> movie.name.toLowerCase().includes(searchValue.toLowerCase()))
 
 
-const url = "/api/movie/movies"
+const url = "http://localhost:5000/api/movie/movies"
 
 useEffect(()=>{
   Axios.get(url).then(response => {
