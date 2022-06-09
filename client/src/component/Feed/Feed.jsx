@@ -35,7 +35,7 @@ const Feed = () => {
  }
  console.log(searchValue)
 
-const filteredMovies = movies?.filter((movie)=> movie.name.toLowerCase().includes(searchValue.toLowerCase()))
+const filteredMovies = movies.filter((movie)=> movie.name.toLowerCase().includes(searchValue.toLowerCase()))
 
 
 const url = "/api/movie/movies"
