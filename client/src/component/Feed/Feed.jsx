@@ -35,8 +35,9 @@ const Feed = () => {
  }
  console.log(searchValue)
 
+// const filteredMovies = movies.filter((movie)=> movie.name.toLowerCase().includes(searchValue.toLowerCase()))
 const filteredMovies = movies.filter((movie)=> movie.name.includes(searchValue))
-console.log(filteredMovies)
+console.log(movies)
 
 
 const url = "/api/movie/movies"
@@ -86,6 +87,7 @@ useEffect(()=>{
                         filteredMovies.map((movie, index)=>
                         // movies.map((movie, index)=>
                         {
+                          console.log(filteredMovies.map(movie=>movie.name))
                             // const {id, name, photo, descriptiom, rating, releaseDate, country} = movie
                             return(
                               <div className='food-container'>
